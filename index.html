@@ -3,6 +3,101 @@
 <head>
 <title>My Profile</title>
 </head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #667e8c;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #45555e;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'Personalinfo')">Personal Information</button>
+  <button class="tablinks" onclick="openSection(event, 'Interestinit')">Interest In IT</button>
+  <button class="tablinks" onclick="openSection(event, 'Idealjob')">Ideal Job</button>
+</div>
+
+<div id="Personalinfo" class="tabcontent">
+  <h3>About me:</h3>
+  <p>My name is Naveed, I am currently studying first year in the Bachelor Of Information</p>
+  <p>Technology. My nationality is Sri Lankan and so is my culture, although I was born and raised in </p>
+  <p>Australia. I am fluent in English and can understand some of my cultures language, Tamil. I recently </p>
+  <p>got into a new hobby called ‘astrophotography’ and I enjoy spending my nights outside star gazing. I also enjoy gaming especially with friends whether its competitive or just for fun. I am easily approachable and would be open to communication if you are nice and polite.</p>
+  <p>also enjoy gaming especially with friends whether its competitive or just for fun. I am easily approachable and would be open to communication if you are nice and polite.</p>
+  <p>approachable and would be open to communication if you are nice and polite.</p>
+</div>
+
+<div id="Interestinit" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Idealjob" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openSection(evt, sectionName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
+
 <body>
 
 <div>
