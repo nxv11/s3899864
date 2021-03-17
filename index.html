@@ -1,51 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Profile</title>
+<title>Naveed Naleem - ePortfolio</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="ePortfolio for Student Name."/>
+<meta charset="UTF-8">
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<script src="myscripts.js"></script>
+
 </head>
 <!DOCTYPE html>
 <html>
 <head>
+<script src="myscripts.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #4d4d4d;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #50c7a7;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #7bb3a4;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
 </style>
 </head>
 <style>
@@ -64,11 +36,12 @@ button {text-align: center;}
 </style>
 
 <div>
-<h2>My Profile</h2>
+<h2>Naveed Naleem - ePortfolio</h2>
 </div>
 
 <div class="tab">
   <button class="tablinks" onclick="openSection(event, 'persinfo')" >Personal Information</button>
+  <button class="tablinks" onclick="openSection(event, 'skills')" >My skills and experience</button>
   <button class="tablinks" onclick="openSection(event, 'persprof')">Personal Profile</button>
   <button class="tablinks" onclick="openSection(event, 'projidea')">Project Idea</button>
 </div>
@@ -90,37 +63,43 @@ button {text-align: center;}
   <h3>Ideal Job</h3>
   <p>My ideal job would be in the areas of networking, cyber security, or cloud computing. An example </p>
   <p>for my ideal job can include the following job advertisement:</p>
-  <h4>Job title: Cloud Operations Engineer</h4>
+  <h3>Job title: Cloud Operations Engineer</h3>
+  <h5>About this job:</h5>
+  <p>Support and project work in cloud software. Deployment and scripting of cloud applications </p>
+  <p>for the business to use. BAU support work as well as complicated migration work. This position </p>
+  <p>attracts me as it has very high pay and is involved with the future of cloud technologies. It appeals to </p>
+  <p>me because it is related to cloud applications and the development of them to be implemented in businesses</p>
+</div>
+
+<div id="skills" class="tabcontent">
+<h3>The skills required for my ideal job:</h3>
+  <p>Prior experience in a Cloud Operations engineering role as a technical specialist.</p>
+  <p>Strong skills in Linux, Networking, Scripting and Web Application Servers.</p>
+  <p>Solid experience in supporting relational databases.</p>
+  <p>Experience in customer driven environments.</p>
+  <p>Experience in supporting SaaS based platforms.</p>
+  <p>Experience in migrating customers to the cloud (AWS only).</p>
+
 </div>
 
 <div id="persprof" class="tabcontent">
-
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
 </div>
 
 <div id="projidea" class="tabcontent" >
-
   <p></p>
   <p></p>
   <p></p>
-
+  <p></p>
+  <p></p>
+  <p></p>
 </div>
 
-
-<script>
-function openSection(evt, sectionName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(sectionName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
 
 </body>
 </html>
